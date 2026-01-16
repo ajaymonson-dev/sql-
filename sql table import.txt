@@ -1,0 +1,11 @@
+create database kandy;
+use kandy;
+select * from smartphone;
+select distinct (processor_brand)from smartphone;
+select distinct(model)from smartphone;
+select count(distinct(model)) from smartphone;
+select count(distinct(processor_brand))from smartphone;
+update smartphone set processor_brand='mediatek'
+where processor_brand="dimensity";
+select * from smartphone where price>200000;
+select max(price)from smartphone;
