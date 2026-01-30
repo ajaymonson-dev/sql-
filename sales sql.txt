@@ -1,0 +1,29 @@
+use gillapi;
+create table empl(employe_id varchar(10), employe_name varchar(25), employe_age varchar(30), employe_salary int);
+insert into empl values('25bbai03', 'Adarsh', 21, 50000);
+insert into empl values('25bbai20', 'Khaiko', 19, 60000);
+insert into empl values('25bbai06', 'Ajay', 20, 80000);
+insert into empl values('25bbai25','Levi', 18, 20000);
+insert into empl values('25bbai34','Nripan', 19, 40000);
+select * from empl;
+update empl set employe_name='gillapi',employe_age=25
+where employe_id='25bbai06';
+select * from empl;
+delete from empl where employe_id='25bbaio3';
+alter table empl add employe_experi varchar(30);
+alter table empl drop column employe_experi;
+select * from empl;
+select * from salees; -- select sales data
+select distinct (subcategory) from salees;
+select orderid, orderdate,country, region from salees;
+select * from salees where category!='technology';
+select * from salees where quantity>10;
+select max(sales) from salees;
+select avg(profit) from salees;
+select sum(sales) from salees;
+select * from salees where quantity<10;
+select * from salees where city!='hyderabad';
+select * from salees where subcategory='Paper'or'Art';
+select * from salees where quantity  between 10 and 15 ;
+
+
